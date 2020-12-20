@@ -1,0 +1,262 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    height: 700vh;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 7vh;
+    background-color: rgb(43,48,51);
+    color: rgb(132,136,135);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 50px;
+}
+
+
+.navlink {
+    text-decoration: none;
+    color: rgb(132,136,135);
+}
+
+.navelements ul {
+    display: flex;
+    list-style: none;
+}
+
+.navelements li {
+    margin-left: 20px;
+    padding: 0 7px;
+}
+
+.intro{
+    position: absolute;
+    top: 7vh;
+    width: 100%;
+    height: 93vh;
+    overflow: hidden;
+    padding: 5vh 0 0 0 0;
+}
+
+.introvid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introh2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 20vw;
+    text-align: center;
+    font-weight: 800;
+    line-height: 0.85em;
+    color: #fff;
+    background: rgba(0,0,0,0.95);
+    mix-blend-mode: multiply;
+}
+
+.about {
+    background: rgba(50,52,64,25);
+    position: absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+}
+
+section h2 span{
+    font-size: 0.4em;
+    line-height: 0.85em;
+}
+
+
+.skills {
+    display: flex;
+    position: absolute;
+    top: 200vh;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(58,64,74,29);
+    justify-content: space-between;
+}
+
+
+.cssimg {
+    max-height: 800px;
+    max-width: 800px;
+    object-fit: contain;
+
+}
+
+.htmlimg {
+    max-height: 800px;
+    max-width: 800px;
+    object-fit: contain;
+}
+
+.jsimg {
+    max-height: 800px;
+    max-width: 800px;
+    object-fit: contain;
+}
+
+.postgresimg {
+    max-height: 800px;
+    max-width: 800px;
+    object-fit: contain;
+}
+
+.cfooter {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(43,48,51);
+    color: rgb(132,136,135);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 50px;
+}
+
+.contactinfo{
+    
+}
+
+.smedia {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    background: rgb(43,48,51);
+}
+
+.smedia a{
+    text-decoration: none;
+}
+
+    .smedia ul {
+    display: flex;
+}
+
+        .smedia ul li {
+            position: relative;
+            display: block;
+            color: #666;
+            font-size: 30px;
+            height: 60px;
+            width: 60px;
+            background: #171515;
+            line-height: 60px;
+            border-radius: 50%;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+            .smedia ul li:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+                z-index: -1;
+                transform: scale(0.9);
+                transition: .5s;
+            }
+
+        .smedia ul li:nth-child(1):before {
+            background: #4267B2;
+        }
+
+        .smedia ul li:hover:before {
+            filter: blur(3px);
+            transform: scale(1.2);
+        }
+
+        .smedia ul li:nth-child(1):hover:before {
+            box-shadow: 0 0 15px #4267B2;
+        }
+
+        .smedia ul li:nth-child(2):hover:before {
+            box-shadow: 0 0 15px #1DA1F2;
+        }
+
+        .smedia ul li:nth-child(3):hover:before {
+            box-shadow: 0 0 15px #E1306C;
+        }
+
+        .smedia ul li:nth-child(4):hover:before {
+            box-shadow: 0 0 15px #2867B2;
+        }
+
+        .smedia ul li:nth-child(5):hover:before {
+            box-shadow: 0 0 15px #FF0000;
+        }
+
+        .smedia ul li:nth-child(6):hover:before {
+            box-shadow: 0 0 15px #4267B2;
+        }
+
+        .smedia ul li:nth-child(1):hover {
+            color: #456cba;
+            box-shadow: 0 0 15px #4267B2;
+            text-shadow: 0 0 15px #4267B2;
+        }
+
+        .smedia ul li:nth-child(2):hover {
+            color: #1DA1F2;
+            box-shadow: 0 0 15px #1DA1F2;
+            text-shadow: 0 0 15px #1DA1F2;
+        }
+
+        .smedia ul li:nth-child(3):hover {
+            color: #E1306C;
+            box-shadow: 0 0 15px #E1306C;
+            text-shadow: 0 0 15px #E1306C;
+        }
+
+        .smedia ul li:nth-child(4):hover {
+            color: #2867B2;
+            box-shadow: 0 0 15px #2867B2;
+            text-shadow: 0 0 15px #2867B2;
+        }
+
+        .smedia ul li:nth-child(5):hover {
+            color: #FF0000;
+            box-shadow: 0 0 15px #FF0000;
+            text-shadow: 0 0 15px #FF0000;
+        }
+
+        .smedia ul li:nth-child(6):hover {
+            color: white;
+            box-shadow: 0 0 15px white;
+            text-shadow: 0 0 15px white;
+        }
