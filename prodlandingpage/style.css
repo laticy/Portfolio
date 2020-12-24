@@ -1,0 +1,158 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'quicksand', sans-serif;
+    overflow: auto;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#53c5fa, black);
+}
+
+.container1 {
+    display: flex;
+    font-size: 2em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.toptext{
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+}
+
+.container2
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background: #222;
+}
+
+.container2 .clip
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+    .container2 .clip.clip1 {
+        background: url(https://ae01.alicdn.com/kf/H57081ed08ccd4882aff5a12d18c289cbT/ATMOS-MISSION-ONE-DIVE-COMPUTER.jpg_q50.jpg);
+        background-size: 65%;
+        clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+    }
+
+    .container2 .clip.clip2 {
+        background: url(https://msocean.com.tw/wp-content/uploads/2019/07/msoshop20190712_1_2.jpeg); 
+        background-size: contain;
+        clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+    }
+
+    .container2 .clip.clip3 {
+        background: url(https://i.ytimg.com/vi/HNNgu_WzUkQ/maxresdefault.jpg);
+        background-size: auto;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+        overflow: hidden;
+    }
+
+    .container2:hover .clip
+    {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+
+    .container2 .clip:hover
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .container2 .clip .content1
+    {
+        position: absolute;
+        top: -100%;
+        right: 0;
+        width: 40%;
+        height:100%;
+        padding: 20px;
+        background: #fff;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .container2 .clip:hover .content1
+    {
+        top: 0;
+        opacity: 1;
+    }
+
+    .container2 .clip .content2 {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 70%;
+        padding: 20px;
+        background: #fff;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .container2 .clip:hover .content2 {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    .container2 .clip .content3 {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        padding: 1em;
+        background: #fff;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .container2 .clip:hover .content3 {
+        bottom: 0;
+        opacity: 1;
+    }
+
+
+
+.form {
+    display:flex;
+    position: center;   
+    padding: 100px;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+
+.emailInput{
+    font-size:25px;
+    width:500px;
+}
+
+.submitBtn{
+    font-size:25px;
+}
+
